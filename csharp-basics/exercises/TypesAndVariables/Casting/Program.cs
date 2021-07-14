@@ -17,15 +17,21 @@ namespace Casting
 
         static void first()
         {
+
             String a = "1";
             int b = 2;
             int c = 3;
             double d = 4;
             float e = 5;
+            double f;
+            double.TryParse(a, out f);
+            double sum;
+            sum = f + b + c + d + e;
+
 
             //fixme - should be 15 :|
-            //int sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
+
+            Console.WriteLine(sum);
         }
 
         static void second()
@@ -33,12 +39,15 @@ namespace Casting
             String a = "1";
             int b = 2;
             int c = 3;
-            double d = 4.2;
+            float d = 4.2f;
             float e = 5.3f;
+            float f;
+            float.TryParse(a, out f);
+            float sum;
 
             //fixme - should be 15.5 :| 
-            //float sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
+            sum = f + b + c + d + e;
+            Console.WriteLine(sum);
         }
     }
 }
