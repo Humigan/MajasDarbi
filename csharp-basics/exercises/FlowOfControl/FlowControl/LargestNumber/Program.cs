@@ -24,7 +24,7 @@ namespace LargestNumber
             {
                 Console.WriteLine("2nd input the largest: " + input2);
             }
-            else if (input3 > input1 && input3 > input2)
+            else (input3 > input1 && input3 > input2)
             {
                 Console.WriteLine("3rd input the largest: " + input3);
             }
