@@ -145,29 +145,23 @@ class Program
         {
             drawHangman += "--------\n";
         }
-
-        if (livesLeft < 4)
+        else if (livesLeft < 4)
         {
             drawHangman += "       |\n";
         }
-
-        if (livesLeft < 3)
+        else if (livesLeft < 3)
         {
             drawHangman += "       O\n";
         }
-
-        if (livesLeft < 2)
+        else if (livesLeft < 2)
         {
             drawHangman += "      /|\\ \n";
         }
-
-        if (livesLeft == 0)
+        else if (livesLeft == 0)
         {
             drawHangman += "      / \\ \n";
         }
-
-        return drawHangman;
-
+         return drawHangman;
     }
 
 

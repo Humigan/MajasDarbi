@@ -17,7 +17,7 @@ namespace Exercise6
             {
                 arr2[i] = arr[i];
             }
-            arr[9] = -7;
+            arr[arr.Length-1] = -7;
             Console.Write("Array 1: ");
             for (int i = 0; i < arr.Length; i++)
             {

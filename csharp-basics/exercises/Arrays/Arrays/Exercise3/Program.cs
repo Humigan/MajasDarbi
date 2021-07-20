@@ -4,14 +4,13 @@ namespace Exercise3
 {
     class Program
     {
-        //TODO: Write a C# program to calculate the average value of array elements.
-        private static void Main(string[] args)
+         private static void Main(string[] args)
         {
             int[] numbers = {20, 30, 25, 35, -16, 60, -100};
             double sum = 0;
             double average = 0;
 
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i <= numbers.Length; i++)
             {
                 sum = numbers[i] + sum;
             }

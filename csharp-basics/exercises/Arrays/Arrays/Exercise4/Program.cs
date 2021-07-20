@@ -24,7 +24,7 @@ namespace Exercise4
                 if (myArray[i] == specific)
                 {
                     Console.WriteLine("Contains!");
-                    
+                    break;
                 }
             }
         }
