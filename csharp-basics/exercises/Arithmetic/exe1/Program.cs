@@ -22,6 +22,7 @@ namespace ConsoleApp3
             {
               Console.WriteLine(Either = false);
             }
+            Console.WriteLine(Either);
         }
     }
 }

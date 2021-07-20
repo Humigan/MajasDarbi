@@ -24,6 +24,7 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("Odd Number");
                 }
+
                 Console.WriteLine("Continue?");
                 Console.WriteLine("1 - yes / 2 - no");
                 b = int.Parse(Console.ReadLine());
