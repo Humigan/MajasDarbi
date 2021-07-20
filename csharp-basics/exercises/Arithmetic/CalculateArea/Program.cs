@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CalculateArea
+namespace exe10
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int choice; // The user's menu choice
+            double a;
+            double b;
+            double c;
+            int choice;
+            Console.WriteLine("1)Calculate the Area of a Circle");
+            Console.WriteLine("2)Calculate the Area of a Rectangle");
+            Console.WriteLine("3)Calculate the Area of a Triangle");
+            Console.WriteLine("4)Quit");
 
-            do
-            {
-                // Get the user's menu choice.
-                choice = getMenu();
+            choice = int.Parse(Console.ReadLine());
 
                 if (choice == 1)
                 {
