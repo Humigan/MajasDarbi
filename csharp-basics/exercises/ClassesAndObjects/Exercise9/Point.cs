@@ -10,11 +10,13 @@ namespace Exercise9
     {
         int x;
         int y;
+
       public Point(int x,int y) 
         {
             this.x = x;
             this.y = y;
         }
+
         public void SwapPoint(ref Point a, ref Point b) 
         {
             int temp;
@@ -26,6 +28,7 @@ namespace Exercise9
             b.x = temp;
             b.y = temp2;
         }
+
         public void ShowPoint(Point a, Point b) 
         {
             Console.WriteLine("Point 1 x = " + a.x);
@@ -33,6 +36,5 @@ namespace Exercise9
             Console.WriteLine("Point 2 x = " + b.x);
             Console.WriteLine("Point 2 y = " + b.y);
         }
-
     }
 }

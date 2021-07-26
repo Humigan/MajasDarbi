@@ -5,12 +5,14 @@
         double _startOdo;
         double _endingOdo;
         double _liters;
+
         public Car(double startOdo, double endingOdo, double liters)
         {
             _startOdo = startOdo;
             _endingOdo = endingOdo;
             _liters = liters;
         }
+
         public Car(double startOdo)
         {
             _startOdo = startOdo;

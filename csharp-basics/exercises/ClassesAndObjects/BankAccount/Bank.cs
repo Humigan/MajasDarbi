@@ -15,6 +15,7 @@ namespace BankAccount
             this.name = name;
             this.balance = balance;
         }
+
         public string ShowUserNameAndBalance() 
         {
             string a;
@@ -30,7 +31,6 @@ namespace BankAccount
                 Console.WriteLine(a);
                 return a;
             }
-            
         }
     }
 }

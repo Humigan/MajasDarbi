@@ -11,21 +11,25 @@ namespace Exercise4
         string title;
         string studio;
         string rating;
+
         public Movie(string title, string studio, string rating)
         {
             this.title = title;
             this.studio = studio;
             this.rating = rating;
         }
+
         public Movie(string title, string studio)
         {
             this.title = title;
             this.studio = studio;
             rating = "PG";
         }
+
         public Movie GetPG(Movie[] all) 
         {
             int count = 0;
+
             for (int i = 0; i < all.Length; i++)
             {
                 if (all[i].rating == "PG")
@@ -33,8 +37,10 @@ namespace Exercise4
                     count++;
                 }  
             }
+
             Movie [] MyArr = new Movie[count];
             int j = 0;
+
             for (int i = 0; i < all.Length; i++)
             {
                 if (all[i].rating == "PG")
@@ -43,12 +49,13 @@ namespace Exercise4
                     j++;
                 }
             }
+
             for (int i = 0; i < MyArr.Length; i++)
             {
                 Console.WriteLine(MyArr[i].title + " has PG rating");
             }
-                return MyArr[count - 1];
-        }
 
+             return MyArr[count - 1];
+        }
     }
 }

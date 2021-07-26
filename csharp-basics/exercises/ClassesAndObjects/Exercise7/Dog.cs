@@ -12,21 +12,25 @@ namespace Exercise7
         string sex;
         string mother;
         string father;
+
         public Dog(string name, string sex) 
         {
             this.name = name;
             this.sex = sex;
         }
+
         public string Mother(Dog Mother) 
         {
             mother = Mother.name;
             return mother;
         }
+
         public string Father(Dog Father)
         {
             father = Father.name;
             return father;
         }
+
         public string fathersName() 
         {
             if (father == null)
@@ -38,6 +42,7 @@ namespace Exercise7
                 return father;
             }
         }
+
         public bool HasSameMotherAs(Dog a) 
         {
             if(a.mother == mother) 

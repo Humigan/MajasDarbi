@@ -7,13 +7,15 @@
         public int Fuel;
         public int ReportLevel()
         {
-            return _fuelLevel;
+          return _fuelLevel;
         }
 
         public void Fill()
         {
-            if(_fuelLevel < 70)
+            if (_fuelLevel < 70)
+            {
                 _fuelLevel++;
+            }
         }
 
         public void DecreaseLevel()

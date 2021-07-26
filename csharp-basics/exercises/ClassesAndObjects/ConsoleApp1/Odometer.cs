@@ -21,13 +21,19 @@ namespace ConsoleApp1
 
         public void Increment()
         {
-            if (_fuelGauge.ReportLevel() <= 0) return;
+            if (_fuelGauge.ReportLevel() <= 0)
+            {
+                return;
+            }
             
             if (_currentMilage == 1000000)
             {
                 _currentMilage = 0;
             }
-            _currentMilage++;
+            else 
+            {
+              _currentMilage++;
+            }
             
             if (_currentMilage % 10 == 0)
             {

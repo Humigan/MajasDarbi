@@ -9,18 +9,22 @@ namespace Exercise8
     class SavingsAccount
     {
         int _startingBalance;
+
         public SavingsAccount(int Start) 
         {
             _startingBalance = Start;
         }
+
         public int Withdawal (int a) 
         {
             return _startingBalance -= a;
         }
+
         public int Deposit(int a)
         {
             return _startingBalance += a;
         }
+
         public int Interest(int rate,int month) 
         {
             int dep = 0;
@@ -28,6 +32,7 @@ namespace Exercise8
             int wid = 0;
             int widsum = 0;
             double inter = 0;
+
             for (int i = 1; i <= month; i++)
             {
                 Console.WriteLine("Enter amount deposited for month: " + i + ": ");
@@ -38,8 +43,8 @@ namespace Exercise8
                 wid = int.Parse(Console.ReadLine());
                 _startingBalance = Withdawal(wid);
                 widsum = widsum + wid;
-                
             }
+
             inter = (_startingBalance*((1+rate)*month) - _startingBalance)/10;
             Console.WriteLine("Total deposit: $" + depsum);
             Console.WriteLine("Total withdrawn: $" + widsum);

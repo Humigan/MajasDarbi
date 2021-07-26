@@ -6,7 +6,6 @@ namespace Exercise8
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("How much money is in the account?: ");
             int start = int.Parse(Console.ReadLine());
             var Person = new SavingsAccount(start);
@@ -15,7 +14,6 @@ namespace Exercise8
             Console.WriteLine("How long has the account been opened? ");
             int month = int.Parse(Console.ReadLine());
             Person.Interest(inter, month);
-
         }
     }
 }
