@@ -19,15 +19,21 @@ namespace ListExercise7
                 "Black"
             };
 
-            //      TODO: Check if list contains "White" element
-            //        if (...) 
-            //        {
-            //            Console.WriteLine("Found the element");
-            //        } 
-            //        else 
-            //        {
-            //            Console.WriteLine("There is no such element");
-            //        }
+            bool w = false;
+
+            foreach (var i in colors)
+            {
+                if (i == "White")
+                {
+                    w = true;
+                    break;
+                }
+                else 
+                {
+                    w = false;
+                }
+            }
+            Console.WriteLine("In this list there is a White element? " + w);
         }
     }
 }
