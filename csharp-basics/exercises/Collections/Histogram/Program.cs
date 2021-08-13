@@ -11,25 +11,12 @@ namespace Histogram
     class Program
     {
         private const string path = "C:/Users/Humigan/Source/Repos/Humigan/MajasDarbi/csharp-basics/exercises/Collections/Histogram/midtermscores.txt";
-
         private static void Main(string[] args)
         {
-
             using (StreamReader sr = new StreamReader("C:/Users/Humigan/Source/Repos/Humigan/MajasDarbi/csharp-basics/exercises/Collections/Histogram/midtermscores.txt"))
             {
                 string line;
-                int a = 0;
-                int b = 0;
-                int c = 0;
-                int d = 0;
-                int e = 0;
-                int f = 0;
-                int g = 0;
-                int k = 0;
-                int l = 0;
-                int m = 0;
-                int n = 0;
-
+                int[] arr = new int[12];
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] text = line.Split(' ');
@@ -42,111 +29,111 @@ namespace Histogram
                     {
                         if (MyArr[i] > 0&& MyArr[i] <= 9)
                         {
-                            a++;
+                            arr[0]++;
                         }
                         else if (MyArr[i] >= 10&& MyArr[i] <= 19)
                         {
-                            b++;
+                            arr[1]++;
                         }
                         else if (MyArr[i] >= 20 && MyArr[i] <= 29)
                         {
-                            c++;
+                            arr[2]++;
                         }
                         else if (MyArr[i] >= 30 && MyArr[i] <= 39)
                         {
-                            d++;
+                            arr[3]++;
                         }
                         else if (MyArr[i] >= 40 && MyArr[i] <= 49)
                         {
-                            e++;
+                            arr[4]++;
                         }
                         else if (MyArr[i] >= 50 && MyArr[i] <= 59)
                         {
-                            f++;
+                            arr[5]++;
                         }
                         else if (MyArr[i] >= 60 && MyArr[i] <= 69)
                         {
-                            g++;
+                            arr[6]++;
                         }
                         else if (MyArr[i] >= 70 && MyArr[i] <= 79)
                         {
-                            k++;
+                            arr[7]++;
                         }
                         else if (MyArr[i] >= 80 && MyArr[i] <= 89)
                         {
-                            l++;
+                            arr[8]++;
                         }
                         else if (MyArr[i] >= 90 && MyArr[i] <= 99)
                         {
-                            m++;
+                            arr[9]++;
                         }
                         else
                         {
-                            n++;
+                            arr[10]++;
                         }
                     }
                     Console.Write("0 - 9: ");
-                    for (int i = 0; i < a; i++)
+                    for (int i = 0; i < arr[0]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("10 - 19: ");
-                    for (int i = 0; i < b; i++)
+                    for (int i = 0; i < arr[1]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("20 - 29: ");
-                    for (int i = 0; i < c; i++)
+                    for (int i = 0; i < arr[2]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("30 - 39: ");
-                    for (int i = 0; i < d; i++)
+                    for (int i = 0; i < arr[3]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("40 - 49: ");
-                    for (int i = 0; i < e; i++)
+                    for (int i = 0; i < arr[4]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("50 - 59: ");
-                    for (int i = 0; i < f; i++)
+                    for (int i = 0; i < arr[5]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("60 - 69: ");
-                    for (int i = 0; i < g; i++)
+                    for (int i = 0; i < arr[6]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("70 - 79: ");
-                    for (int i = 0; i < k; i++)
+                    for (int i = 0; i < arr[7]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("80 - 89: ");
-                    for (int i = 0; i < l; i++)
+                    for (int i = 0; i < arr[8]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("90 - 99: ");
-                    for (int i = 0; i < m; i++)
+                    for (int i = 0; i < arr[9]; i++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                     Console.Write("100: ");
-                    for (int i = 0; i < n; i++)
+                    for (int i = 0; i < arr[10]; i++)
                     {
                         Console.Write("*");
                     }
