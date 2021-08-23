@@ -8,9 +8,9 @@ namespace Hierarchy
 {
     class Zebra : Mammal
     {
-        public override void Eat(Food a)
+        public override void Eat(Food FoodType)
         {
-            if (a.ToString() == "Hierarchy.Meat")
+            if (FoodType.ToString() == "Hierarchy.Meat")
             {
                 Console.WriteLine("{AnimalType} are NOT eating that type of food!");
             }

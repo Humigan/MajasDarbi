@@ -9,9 +9,9 @@ namespace Hierarchy
     class Tiger : Felime
     {
         private string _livingRegion;
-        public override void Eat(Food a)
+        public override void Eat(Food FoodType)
         {
-            if (a.ToString() == "Hierarchy.Meat")
+            if (FoodType.ToString() == "Hierarchy.Meat")
             {
                 Console.WriteLine("{AnimalType} are eating that type of food!");
             }
@@ -26,7 +26,7 @@ namespace Hierarchy
             Console.WriteLine("Argrrgrg");
         }
 
-        public string livingRegion
+        public string LivingRegion
         {
             get { return _livingRegion; }
             set { _livingRegion = value; }

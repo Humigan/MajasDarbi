@@ -9,7 +9,7 @@ namespace Hierarchy
     class Cat : Felime
     {
         private string _breed;
-        public override void Eat(Food a)
+        public override void Eat(Food FoodType)
         {
             Console.WriteLine("{AnimalType} are eating that type of food!");
         }

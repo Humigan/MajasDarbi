@@ -15,6 +15,7 @@ namespace DragRace
 
             ICar[] CarList = {Audi,Bmw,Lexus,Saab,Tesla,Volkswagen};
             int count = 0;
+
             for (int i = 0; i < CarList.Length; i++)
             {
                 if(i == CarList.Length - 1) 
@@ -39,6 +40,7 @@ namespace DragRace
 
             string fastestName = CarList[0].ToString();
             string fastestSpeed = CarList[0].ShowCurrentSpeed();
+
             for (int i = 0; i < CarList.Length; i++)
             {
              if(Convert.ToInt32(fastestSpeed) <= Convert.ToInt32(CarList[i].ShowCurrentSpeed())) 

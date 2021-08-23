@@ -15,7 +15,7 @@ namespace Hierarchy
 
         public abstract void MakeSound();
 
-        public abstract void Eat(Food a);
+        public abstract void Eat(Food FoodType);
         public string animalName
         {
             get { return _animalName; }
@@ -34,7 +34,7 @@ namespace Hierarchy
             set { _animalWeight = value; }
         }
 
-        public int foodEaten
+        public int FoodEaten
         {
             get { return _foodEaten; }
             set { _foodEaten = value; }

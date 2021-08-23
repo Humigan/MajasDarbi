@@ -16,13 +16,11 @@ namespace AdApp
         {
             if(_peak == true) 
             {
-                var sum = base.Cost() + (_rate*_rate * _numSec);
-                return sum;
+                return base.Cost() + (_rate*_rate * _numSec);
             }
             else
             {
-                var sum = base.Cost() + (_rate * _numSec);
-                return sum;
+                return base.Cost() + (_rate * _numSec);
             }
         }
 
