@@ -7,7 +7,7 @@ namespace Arithmetic.exe7.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void gravity_4numbers_NegativeNumber()
+        public void Gravity_4numbers_NegativeNumber()
         {
             // Arrange
             double gravity = -9.81;
@@ -17,7 +17,7 @@ namespace Arithmetic.exe7.Test
             double expected = -490.5;
 
             // Act
-            var result = Arithmetic_exe7.gravity(gravity, fallingTime, initialPosition, initialVelocity);
+            var result = Arithmetic_exe7.Gravity(gravity, fallingTime, initialPosition, initialVelocity);
 
             // Assert
             Assert.AreEqual(expected, result);

@@ -15,7 +15,7 @@ namespace Arithmetic.exe8.Test
             var expected = 300;
 
             // Act
-            var result = Arithmetic_exe8.Salary(hours, BasePay);
+            var result = Arithmetic_exe8.CalculateSalary(hours, BasePay);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -30,7 +30,7 @@ namespace Arithmetic.exe8.Test
             var expected = 550;
 
             // Act
-            var result = Arithmetic_exe8.Salary(hours, BasePay);
+            var result = Arithmetic_exe8.CalculateSalary(hours, BasePay);
 
             // Assert
             Assert.AreEqual(expected, result);

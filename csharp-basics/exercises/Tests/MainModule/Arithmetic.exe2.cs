@@ -8,16 +8,9 @@ namespace Arithmetic.exe2.Test
 {
     public static class Arithmetic_exe2
     {
-        public static string isEven(int a)
+        public static string IsEven(int a)
         {
-            if (a%2 == 0)
-            {
-                return "Even number";
-            }
-            else
-            {
-                return "Odd number";
-            }
+            return a % 2 == 0 ? "Even number" : "Odd number";
         }
     }
 }

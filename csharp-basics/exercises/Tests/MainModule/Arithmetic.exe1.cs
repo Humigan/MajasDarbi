@@ -8,7 +8,7 @@ namespace Arithmetic.exe1.Test
 {
     public static class Arithmetic_exe1
     {
-        public static bool is15(int a, int b) 
+        public static bool Is15(int a, int b) 
         {
             if (a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15)
             {

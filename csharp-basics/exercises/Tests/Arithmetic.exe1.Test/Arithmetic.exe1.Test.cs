@@ -7,7 +7,7 @@ namespace Arithmetic.exe1.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void Sumis15_AandB_true()
+        public void is15_2NumbersMakesSum15_True()
         {
             // Arrange
             int a = 5;
@@ -15,14 +15,14 @@ namespace Arithmetic.exe1.Test
             bool expected = true;
 
             // Act
-            var result = Arithmetic_exe1.is15(a, b);
+            var result = Arithmetic_exe1.Is15(a, b);
 
             // Assert
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void Difis15_AandB_true()
+        public void is15_2NumbersDiferencMakes15_True()
         {
             // Arrange
             int a = 20;
@@ -30,14 +30,14 @@ namespace Arithmetic.exe1.Test
             bool expected = true;
 
             // Act
-            var result = Arithmetic_exe1.is15(a, b);
+            var result = Arithmetic_exe1.Is15(a, b);
 
             // Assert
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void Eitheris15_AandB_true()
+        public void is15_2NumbersEitherMakes15_True()
         {
             // Arrange
             int a = 15;
@@ -45,14 +45,14 @@ namespace Arithmetic.exe1.Test
             bool expected = true;
 
             // Act
-            var result = Arithmetic_exe1.is15(a, b);
+            var result = Arithmetic_exe1.Is15(a, b);
 
             // Assert
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void Isnt15_AandB_true()
+        public void is15_2NumbersIsntMakes15_True()
         {
             // Arrange
             int a = 7;
@@ -60,7 +60,7 @@ namespace Arithmetic.exe1.Test
             bool expected = false;
 
             // Act
-            var result = Arithmetic_exe1.is15(a, b);
+            var result = Arithmetic_exe1.Is15(a, b);
 
             // Assert
             Assert.AreEqual(expected, result);

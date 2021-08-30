@@ -8,7 +8,7 @@ namespace Arithmetic.exe8.Test
 {
     public static class Arithmetic_exe8
     {
-        public static double Salary(double hours, double BasePay)
+        public static double CalculateSalary(double hours, double BasePay)
         {
             double overwork;
             double sal;

@@ -11,7 +11,7 @@ namespace ClassesAndObjects.exe12.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void deposit_100_100()
+        public void Deposit_Add100_Balance100()
         {
             // Arrange
             var a = new ClassesAndObjects_exe12();
@@ -25,7 +25,7 @@ namespace ClassesAndObjects.exe12.Test
         }
 
         [TestMethod]
-        public void withdrawal_70_70()
+        public void Withdrawal_70_70()
         {
             // Arrange
             var b = new ClassesAndObjects_exe12();
@@ -39,7 +39,7 @@ namespace ClassesAndObjects.exe12.Test
         }
 
         [TestMethod]
-        public void transfer_100_150()
+        public void Transfer_To50Add100_Balance150()
         {
             // Arrange
             var c = new ClassesAndObjects_exe12();

@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ClassesAndObjects.exe1.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class ProductTest
     {
         [TestMethod]
         public void ChangePrice_Price_true()
@@ -25,7 +25,7 @@ namespace ClassesAndObjects.exe1.Test
         }
 
         [TestMethod]
-        public void ChangeQuantity_Lists_true()
+        public void ChangeQuantity_Amount_true()
         {
             // Arrange
             var b = new ClassesAndObjects_exe1();

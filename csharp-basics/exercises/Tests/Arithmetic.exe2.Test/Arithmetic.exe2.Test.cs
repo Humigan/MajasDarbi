@@ -7,28 +7,28 @@ namespace Arithmetic.exe2.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void isEven_Number_EvenNumber()
+        public void IsEven_Number_EvenNumber()
         {
             // Arrange
             int a = 24;
             string expected = "Even number";
 
             // Act
-            var result = Arithmetic_exe2.isEven(a);
+            var result = Arithmetic_exe2.IsEven(a);
 
             // Assert
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void isEven_Number_OddNumber()
+        public void IsEven_Number_OddNumber()
         {
             // Arrange
             int a = 11;
             string expected = "Odd number";
 
             // Act
-            var result = Arithmetic_exe2.isEven(a);
+            var result = Arithmetic_exe2.IsEven(a);
 
             // Assert
             Assert.AreEqual(expected, result);

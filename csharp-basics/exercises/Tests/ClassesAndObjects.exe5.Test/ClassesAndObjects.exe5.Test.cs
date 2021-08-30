@@ -11,7 +11,7 @@ namespace ClassesAndObjects.exe5.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void SetDay_Day_true()
+        public void SetDay_NewDay_true()
         {
             // Arrange
             var a = new ClassesAndObjects_exe5();
@@ -25,7 +25,7 @@ namespace ClassesAndObjects.exe5.Test
         }
 
         [TestMethod]
-        public void SetMonth_Month_true()
+        public void SetMonth_NewMonth_true()
         {
             // Arrange
             var b = new ClassesAndObjects_exe5();
@@ -39,7 +39,7 @@ namespace ClassesAndObjects.exe5.Test
         }
 
         [TestMethod]
-        public void SetYear_Year_true()
+        public void SetYear_NewYear_true()
         {
             // Arrange
             var c = new ClassesAndObjects_exe5();
