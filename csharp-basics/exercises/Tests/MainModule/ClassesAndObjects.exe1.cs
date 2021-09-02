@@ -8,7 +8,7 @@ namespace ClassesAndObjects.exe1.Test
 {
     public class ClassesAndObjects_exe1
     {
-       private string name;
+        private string name;
         private double price = 0;
         private int amount = 0;
 

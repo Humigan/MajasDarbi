@@ -7,7 +7,7 @@ namespace Arithmetic.exe1.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void is15_2NumbersMakesSum15_True()
+        public void Is15_2NumbersMakesSum15_True()
         {
             // Arrange
             int a = 5;
@@ -22,7 +22,7 @@ namespace Arithmetic.exe1.Test
         }
 
         [TestMethod]
-        public void is15_2NumbersDiferencMakes15_True()
+        public void Is15_2NumbersDiferencMakes15_True()
         {
             // Arrange
             int a = 20;
@@ -37,7 +37,7 @@ namespace Arithmetic.exe1.Test
         }
 
         [TestMethod]
-        public void is15_2NumbersEitherMakes15_True()
+        public void Is15_2NumbersEitherMakes15_True()
         {
             // Arrange
             int a = 15;
@@ -52,7 +52,7 @@ namespace Arithmetic.exe1.Test
         }
 
         [TestMethod]
-        public void is15_2NumbersIsntMakes15_True()
+        public void Is15_2NumbersIsntMakes15_True()
         {
             // Arrange
             int a = 7;

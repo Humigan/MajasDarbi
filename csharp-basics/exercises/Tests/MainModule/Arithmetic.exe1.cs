@@ -10,14 +10,8 @@ namespace Arithmetic.exe1.Test
     {
         public static bool Is15(int a, int b) 
         {
-            if (a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+           bool result = a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15 ? true : false;
+           return result;
         }
     }
 }
