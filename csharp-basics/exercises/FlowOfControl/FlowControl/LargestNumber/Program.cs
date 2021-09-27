@@ -8,20 +8,26 @@ namespace LargestNumber
         static void Main(string[] args)
         {
             Console.WriteLine("Input the 1st number: ");
-            var input1 = Console.ReadLine();
+            double input1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Input the 2nd number: ");
-            var input2 = Console.ReadLine();
+            double input2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Input the 3rd number: ");
-            var input3 = Console.ReadLine();
-        
-            /*
-            todo - expected output:
-            Input the 1st number: 25
-            Input the 2nd number: 78
-            Input the 3rd number: 87
-             */
+            double input3 = double.Parse(Console.ReadLine());
+
+            if (input1 > input2 && input1 > input3)
+            {
+                Console.WriteLine("1st input the largest: " + input1);
+            }
+            else if (input2 > input1 && input2 > input3)
+            {
+                Console.WriteLine("2nd input the largest: " + input2);
+            }
+            else (input3 > input1 && input3 > input2)
+            {
+                Console.WriteLine("3rd input the largest: " + input3);
+            }
         }
     }
 }
