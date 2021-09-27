@@ -17,16 +17,16 @@ namespace ListExercise4
                 "Green",
                 "Orange",
                 "White",
-                "Black"
+                "Black",
+                "Yellow",
+                "Purple"
             };
 
-            //fixme
-            //string element = ...;
-            //Console.WriteLine("First element: " + element);
+            string element = colors[0];
+            Console.WriteLine("First element: " + element);
 
-            //fixme
-            //element = ...;
-            //Console.WriteLine("Third element: " + element);
+            element = colors[2];
+            Console.WriteLine("Third element: " + element);
         }
     }
 }

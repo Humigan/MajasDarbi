@@ -10,19 +10,45 @@ namespace ListExercise11
     {
         static void Main(string[] args)
         {
-            //TODO: Create an List with string elements
+            var Elements = new List<string>();
+            Elements.Add("Eagle");
+            Elements.Add("Bicycle");
+            Elements.Add("Apple");
+            Elements.Add("Canada");
+            Elements.Add("Foobar");
+            Elements.Add("Australia");
+            Elements.Add("Mouse");
+            Elements.Add("Teacher");
+            Elements.Add("Cat");
+            Elements.Add("Dog");
+            Console.WriteLine(string.Join(",", Elements));
+            
+            Elements.Insert(5, "Green");
+            Console.WriteLine(string.Join(",", Elements));
 
-            //TODO: Add 10 values to list
+            Elements.RemoveAt(Elements.Count-1);
+            Console.WriteLine(string.Join(",", Elements));
 
-            //TODO: Add new value at 5th position
+            Elements.Insert(Elements.Count-1,"House");
+            Console.WriteLine(string.Join(",", Elements));
 
-            //TODO: Change value at last position (Calculate last position programmatically)
+            Elements.Sort();
+            Console.WriteLine(string.Join(",", Elements));
 
-            //TODO: Sort your list in alphabetical order
+            bool f = false;
+            foreach (var i in Elements)
+            {
+                if (i == "Foobar")
+                {
+                    f = true;
+                }
+            }
+            Console.WriteLine("There is a Foobar word? " + f);
 
-            //TODO: Check if your list contains "Foobar" element
-
-            //TODO: Print each element of list using loop
+            foreach (var i in Elements)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
