@@ -13,15 +13,20 @@ namespace ConsoleApp3
             int a, b;
             a = int.Parse(Console.ReadLine());
             b = int.Parse(Console.ReadLine());
-            bool Either;
+
+            bool is15 (int a,int b) 
+           {
+            
             if (a == 15 || b == 15 || a + b == 15 || a - b == 15 || b - a == 15)
             {
-              Console.WriteLine(Either = true);
+                    return true;
             }
             else 
             {
-              Console.WriteLine(Either = false);
+                    return false;
             }
+           }
+            bool Either = is15(a, b);
             Console.WriteLine(Either);
         }
     }
