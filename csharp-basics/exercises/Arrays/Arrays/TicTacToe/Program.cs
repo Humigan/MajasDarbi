@@ -10,6 +10,32 @@ namespace TicTacToe
         {
             InitBoard();
             DisplayBoard();
+            int x, y;
+            Console.WriteLine("Choose space: ");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            board[x, y] = 'O';
+            DisplayBoard();
+            Console.WriteLine("Choose space: ");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            board[x, y] = 'X';
+            DisplayBoard();
+            Console.WriteLine("Choose space: ");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            board[x, y] = 'O';
+            DisplayBoard();
+            Console.WriteLine("Choose space: ");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            board[x, y] = 'X';
+            DisplayBoard();
+            Console.WriteLine("Choose space: ");
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            board[x, y] = '0';
+            DisplayBoard();
         }
 
         private static void InitBoard()

@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Exercise1
 {
@@ -28,12 +33,13 @@ namespace Exercise1
             //fixme
             Console.WriteLine("Original numeric array : " + string.Join("," , myArray1));
             //........... //Sort array
+            Array.Sort(myArray1);
             
             Console.WriteLine("Sorted numeric array : " + string.Join("," , myArray1));
     
             Console.WriteLine("Original string array : " + string.Join("," , myArray2));
             //......... //Sort array
-            
+            Array.Sort(myArray2);
             Console.WriteLine("Sorted string array : " + string.Join("," , myArray2));
             //*/
             Console.ReadKey();
